@@ -1,0 +1,12 @@
+# Obsidian local settings
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache/
+.obsidian/backups/
+
+# Trash folder
+.trash/
+
+# OS metadata
+.DS_Store
+Thumbs.db
