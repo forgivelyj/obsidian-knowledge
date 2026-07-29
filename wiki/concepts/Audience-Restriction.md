@@ -21,4 +21,4 @@ description: "受众限制是一种访问控制机制，用来限定 Access Toke
 - 授权服务器（AS）在生成令牌时，在其中写入受众标识（例如在 JWT 格式的令牌中设定 `aud` 声明，或在 Token 内省响应中返回 `aud` 字段）。
 - 接收令牌的资源服务器（RS）**必须**核对自身的物理标识是否被包含在 `aud` 列表中。若不包含，则必须拒绝访问。
 
-在 RFC 8707 中，通过 [[Resource-Indicators]] 传递的 `resource` 属性，就是授权服务器用来锁定 `aud` 值的核心数据源。
+在 [[Resource-Indicators|RFC 8707]] 中，通过 [[Resource-Indicators]] 传递的 `resource` 属性，就是授权服务器用来锁定 `aud` 值的核心数据源。

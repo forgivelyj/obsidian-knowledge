@@ -21,4 +21,4 @@ OAuth 2.0 是目前最广泛应用的授权框架（定义于 RFC 6749 和 RFC 6
 - **Authorization Server (授权服务器)**：负责验证资源所有者并向客户端发放令牌。
 
 ## 相关扩展协议
-- [[Resource-Indicators]] (RFC 8707)：使客户端能够明确通知授权服务器当前申请的令牌究竟要在哪一个资源服务器（RS）上使用，从而生成具备 [[Audience-Restriction]] 的安全令牌。
+- [[Resource-Indicators]] ([[Resource-Indicators|RFC 8707]])：使客户端能够明确通知授权服务器当前申请的令牌究竟要在哪一个资源服务器（RS）上使用，从而生成具备 [[Audience-Restriction]] 的安全令牌。
