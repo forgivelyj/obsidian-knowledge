@@ -141,3 +141,48 @@
 - **新建**：[[lobehub-mcp-auth-solution]] (综合洞察页)
 - **更新**：`wiki/index.md` (全局索引)
 - **操作描述**：结合本地知识库中的 MCP 及 OAuth 2.0 规范，整理 LobeHub 接入身份认证 MCP 服务器的完整技术方案，详解 Stdio 本地进程环境变量注入与标准 OAuth 2.0 PKCE 认证，并提出基于 RFC 8707 Resource Indicators 锁受众防 Token 泄露以及流程挂起自愈重试的机制。
+
+## [2026-08-05] ingest | OAuth 2.0 & OIDC 协议规范 (7份素材)
+- **来源**：
+  - `raw/00-Inbox/Final OpenID Connect Discovery 1.0 incorporating errata set 2.md`
+  - `raw/00-Inbox/OAuth Client ID Metadata Document.md`
+  - `raw/00-Inbox/RFC 7591 OAuth 2.0 Dynamic Client Registration Protocol.md`
+  - `raw/00-Inbox/RFC 7636 Proof Key for Code Exchange by OAuth Public Clients.md`
+  - `raw/00-Inbox/RFC 8252 OAuth 2.0 for Native Apps.md`
+  - `raw/00-Inbox/RFC 8414 OAuth 2.0 Authorization Server Metadata.md`
+  - `raw/00-Inbox/RFC 9728 OAuth 2.0 Protected Resource Metadata.md`
+- **新建/更新摘要**：
+  - [[Final-OpenID-Connect-Discovery-1.0-incorporating-errata-set-2-summary]]
+  - [[OAuth-Client-ID-Metadata-Document-summary]]
+  - [[RFC-7591-OAuth-2.0-Dynamic-Client-Registration-Protocol-summary]]
+  - [[RFC-7636-Proof-Key-for-Code-Exchange-by-OAuth-Public-Clients-summary]]
+  - [[RFC-8252-OAuth-2.0-for-Native-Apps-summary]]
+  - [[RFC-8414-OAuth-2.0-Authorization-Server-Metadata-summary]]
+  - [[RFC-9728-OAuth-2.0-Protected-Resource-Metadata-summary]]
+- **新建/更新实体**：
+  - [[OAuth-2.0]] (更新实体页，关联新增 7 扩展规范)
+  - [[OpenID-Connect]] (新建实体页)
+- **新建概念**：
+  - [[OIDC-Discovery]] (概念页)
+  - [[OAuth-Client-ID-Metadata]] (概念页)
+  - [[Dynamic-Client-Registration]] (概念页)
+  - [[PKCE]] (概念页)
+  - [[OAuth-Native-Apps]] (概念页)
+  - [[Authorization-Server-Metadata]] (概念页)
+  - [[Protected-Resource-Metadata]] (概念页)
+- **更新**：`wiki/index.md` (全局索引)
+## [2026-08-10] synthesis | Agent MCP 鉴权标准架构 (DCR与CIMD混合鉴权方案)
+- **新建**：[[Agent MCP 鉴权标准架构 (DCR与CIMD混合鉴权方案)]] (综合洞察页)
+- **更新**：`wiki/index.md` (全局索引)
+- **操作描述**：基于全链路端到端联调测试结论，总结并撰写 Agent MCP 鉴权标准架构 (v2.0)。包含 V1/V2 双端点隔离 (Legacy `/mcp` 直传 X-ID-Token 与 OAuth2 401 质询 `/v2/mcp`)、DCR 动态客户端注册自动免确认授权 (`autoApprove=true`)、`application.yml` 配置解耦 (`default-scopes` 与 `default-resource`)、2-Step RFC 8693 Token Exchange 链路与客户端 `mcp.json` 部署规范。
+
+## [2026-08-14] ingest | OpenWiki 代码库文档维护 (system-auth-center)
+- **来源**：`d:/workspace/java-project/erp/system-auth-center`
+- **新建**：[[system-auth-center-summary]] (摘要页)
+- **新建**：[[System-Auth-Center]] (实体页)
+- **新建**：[[System-Auth-Center-Architecture]] (概念页)
+- **新建**：[[Custom-Token-Granter-Pattern]] (概念页)
+- **更新**：`wiki/index.md` (全局索引)
+- **操作描述**：基于 LangChain OpenWiki 规范与 OKF v0.1 标准，为 `system-auth-center` 代码库建立 `openwiki/` 目录结构（包含 `index.md`, `architecture.md`, `custom-token-granters.md`, `security-and-rate-limiting.md`, `INSTRUCTIONS.md`, `logs.md`），并同步沉淀关联节点至本地 Obsidian 知识库。
+
+

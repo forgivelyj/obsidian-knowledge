@@ -1,11 +1,12 @@
 # Wiki Index
 
-> 最后更新：2026-07-28 | 页面总数：61 | 素材总数：12
+> 最后更新：2026-08-05 | 页面总数：76 | 素材总数：19
 
 ---
 
 ## 📂 实体 (Entities)
-- [[OAuth-2.0]] - 业界标准的分布式授权框架 (sources: 1)
+- [[OAuth-2.0]] - 业界标准的分布式授权框架 (sources: 7)
+- [[OpenID-Connect]] - 构建在 OAuth 2.0 之上的身份认证与 UserInfo 标准层 (sources: 1)
 - [[ChromaDB]] - 开源本地轻量级嵌入向量数据库 (sources: 5)
 - [[Redis]] - 高性能内存键值型缓存数据库 (sources: 3)
 - [[LlamaIndex]] - 开源主流大模型私有数据整合框架 (sources: 6)
@@ -19,9 +20,19 @@
 - [[CrewAI]] - 基于岗位专业分工与 sequential 串行编排的多智能体框架 (sources: 1)
 - [[OpenSandbox]] - 阿里开源的专为 AI 自动代码执行设计的隔离容器沙箱系统 (sources: 1)
 - [[LangGraph]] - 由 LangChain 团队开源的用于构建生产级、有状态多智能体系统的图编排框架 (sources: 1)
-- [[MCP]] - 由 Anthropic 主导开源的标准化上下文连接协议，被称为 AI 领域的 USB-C 标准接口 (sources: 1)
+- [[System-Auth-Center]] - ERP 系统的集中式身份认证与授权中心服务实体 (sources: 1)
 
 ## 📚 概念 (Concepts)
+- [[System-Auth-Center-Architecture]] - system-auth-center 微服务认证中心的安全过滤器链、授权端点与 Token 增强架构 (sources: 1)
+- [[Custom-Token-Granter-Pattern]] - 基于 AbstractCustomTokenGranter 扩展的多模式登录（LDAP、SMS、Social）模式 (sources: 1)
+
+- [[OIDC-Discovery]] - WebFinger 与 openid-configuration 配置发现协议 (sources: 1)
+- [[OAuth-Client-ID-Metadata]] - 基于 HTTPS URL 作为 Client ID 的去中心化客户端元数据托管规范 (sources: 1)
+- [[Dynamic-Client-Registration]] - RFC 7591 OAuth 2.0 客户端动态注册与凭证管理协议 (sources: 1)
+- [[PKCE]] - RFC 7636 授权码防拦截机制与动态密钥挑战协议 (sources: 1)
+- [[OAuth-Native-Apps]] - RFC 8252 / BCP 212 原生应用安全规范，强制外部浏览器与 PKCE (sources: 1)
+- [[Authorization-Server-Metadata]] - RFC 8414 OAuth 2.0 授权服务器元数据与终节点自动发现协议 (sources: 1)
+- [[Protected-Resource-Metadata]] - RFC 9728 受保护资源服务器元数据与信任 AS 列表发现规范 (sources: 1)
 - [[Resource-Indicators]] - 锁定令牌使用范围 of OAuth2 安全参数 (sources: 1)
 - [[Audience-Restriction]] - 限制令牌使用受众的安全机制 (sources: 1)
 - [[RAG]] - 检索增强生成，消除大模型幻觉与时效限制的核心框架 (sources: 8)
@@ -56,6 +67,13 @@
 - [[MCP-FastMCP-LangChain]] - MCP 框架开发与 LangChain 适配，阐述 FastMCP 极简声明开发方式，与 LangChain 生态适配，详述 MultiServerMCPClient 工具适配整合 (sources: 1)
 
 ## 📝 摘要 (Summaries)
+- [[Final-OpenID-Connect-Discovery-1.0-incorporating-errata-set-2-summary]] - OpenID Connect Discovery 1.0 发现协议说明 (2026-08-05)
+- [[OAuth-Client-ID-Metadata-Document-summary]] - 基于 URL 作为 Client ID 的去中心化客户端元数据规范 (2026-08-05)
+- [[RFC-7591-OAuth-2.0-Dynamic-Client-Registration-Protocol-summary]] - RFC 7591 动态客户端注册协议说明 (2026-08-05)
+- [[RFC-7636-Proof-Key-for-Code-Exchange-by-OAuth-Public-Clients-summary]] - RFC 7636 PKCE 授权码防拦截机制说明 (2026-08-05)
+- [[RFC-8252-OAuth-2.0-for-Native-Apps-summary]] - RFC 8252 原生应用安全最佳实践规范说明 (2026-08-05)
+- [[RFC-8414-OAuth-2.0-Authorization-Server-Metadata-summary]] - RFC 8414 授权服务器元数据发现协议说明 (2026-08-05)
+- [[RFC-9728-OAuth-2.0-Protected-Resource-Metadata-summary]] - RFC 9728 受保护资源元数据发现协议说明 (2026-08-05)
 - [[RFC-8707-Resource-Indicators-for-OAuth-2.0-summary]] - RFC 8707 资源指示器规范说明 (2026-07-27)
 - [[01-RAG基础-summary]] - 检索增强生成基础、Naive RAG 及向量检索的实操说明 (2026-07-28)
 - [[02-llama_index框架-summary]] - LlamaIndex 架构、LlamaParse、存储体系与引擎开发的系统指南 (2026-07-28)
@@ -67,11 +85,14 @@
 - [[08-RAG项目实战-summary]] - FastAPI与Vue端到端开发、三路数据流、SSE半行截断缓冲与 store_nodes_override (2026-07-28)
 - [[Agent智能体-summary]] - AI智能体五层技术架构、运行时环境、长期短期记忆、中间件系统与 AutoGen/CrewAI 实战 (2026-07-28)
 - [[DeepAgent框架-summary]] - 企业级深度智能体 Harness 设计、CompositeBackend 路由器、OpenSandbox 适配与分层隔离 (2026-07-28)
-- [[LangGraph框架-summary]] - 多智能体工作流框架 LangGraph 核心功能，拆解 StateGraph 与 Map-Reduce 动态分支、持久化 Checkpoint 状态重放、跨会话 Store 语义长期记忆、双轨人机交互中断及分布式多代理协同 (2026-07-28)
-- [[MCP-模型上下文协议-summary]] - 系统总结由 Anthropic 主导开源的模型上下文协议 (MCP) 核心内容，拆解 Host-Client-Server 拓扑架构、三剑客要素、物理传输通道演进与 LangChain 生态适配 (2026-07-28)
+- [[LangGraph框架-summary]] - 多智能体工作流框架 LangGraph 核心功能 (2026-07-28)
+- [[system-auth-center-summary]] - Java 微服务认证中心 system-auth-center 架构概览与多登录模式总结 (2026-08-14)
+- [[MCP-模型上下文协议-summary]] - 系统总结由 Anthropic 主导开源的模型上下文协议 (MCP) 核心内容 (2026-07-28)
+
 
 ## 📊 对比分析 (Comparisons)
 - [[RAG-vs-Fine-Tuning]] - RAG 与大模型微调在知识时效、幻觉抑制等维度的深度选型指南 (2026-07-28)
 
 ## 💡 综合洞察 (Synthesis)
 - [[lobehub-mcp-auth-solution]] - LobeHub 接入身份认证 MCP 服务器架构方案 (2026-07-29)
+- [[Agent MCP 鉴权标准架构 (DCR与CIMD混合鉴权方案)]] - Agent MCP 体系中基于 DCR、CIMD、RFC 9728 与 2-Step RFC 8693 Token Exchange 的企业级混合鉴权标准规范 (2026-08-10)
