@@ -194,3 +194,21 @@
 - **新建**：[[Compounding-Knowledge]] (概念页)
 - **更新**：`wiki/index.md` (全局索引)
 - **操作描述**：摄入 Andrej Karpathy 关于大模型驱动的持久化个人知识库设计模式（LLM Wiki），建立三层架构与四大工作流模型。
+
+## [2026-09-18] ingest | Towards a Science of Scaling Agent Systems (arXiv:2512.08296)
+- **来源**：`raw/00-Inbox/Towards-a-Science-of-Scaling-Agent-Systems.md`
+- **新建**：[[Towards-a-Science-of-Scaling-Agent-Systems-summary]] (摘要页)
+- **新建**：[[Agent-Scaling-Law]] (概念页)
+- **更新**：[[AI-Agent]] (概念页，引入多智能体能力饱和与工具开销边界)
+- **更新**：[[LangGraph-Multi-Agent]] (概念页，引入集中校验防错误雪崩规律)
+- **更新**：`wiki/index.md` (全局索引)
+- **操作描述**：深度解析并摄入华盛顿大学与MIT等团队关于智能体系统扩展律的实证科学研究，量化 5 类架构、能力饱和效应、重工具协调开销负惩罚（$\hat{\beta}=-0.096$）及集中校验对阻断幻觉级联的核心机制，建立架构与任务解耦特征对齐规则。
+
+## [2026-09-18] ingest | Google Antigravity Teamwork (When AI Becomes a Research Partner)
+- **来源**：`raw/00-Inbox/Teamwork-When-AI-Becomes-a-Research-Partner.md`
+- **新建**：[[Teamwork-When-AI-Becomes-a-Research-Partner-summary]] (摘要页)
+- **新建**：[[Teamwork]] (实体页)
+- **新建**：[[Long-Proof-Pattern]] (概念页)
+- **新建**：[[Silent-Execution-Gap]] (概念页)
+- **更新**：`wiki/index.md` (全局索引)
+- **操作描述**：摄入 Google Antigravity 官方发布的 Teamwork 多智能体前沿科研与工程编排体系，解构 Pattern 声明式解耦与运行时弹性伸缩特性，萃取 Long Proof 锦标赛综合树与 1v1 Falsifier 对抗证伪范式，沉淀解决 CPU 微架构时序仿真的 Lockstep 锁步协同方案（跨越静默执行鸿沟），并记录数学 7 大未决猜想及 Eigen/ParlayHash 开源合入战果。

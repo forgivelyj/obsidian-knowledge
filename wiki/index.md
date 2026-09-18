@@ -1,6 +1,6 @@
 # Wiki Index
 
-> 最后更新：2026-08-15 | 知识页面总数：79 (实体: 17 | 概念: 34 | 摘要: 22 | 对比: 1 | 综合洞察: 2) | 素材总数：20
+> 最后更新：2026-09-18 | 知识页面总数：82 (实体: 18 | 概念: 37 | 摘要: 24 | 对比: 1 | 综合洞察: 2) | 素材总数：22
 
 ---
 
@@ -22,6 +22,7 @@
 - [[LangGraph]] - 由 LangChain 团队开源的用于构建生产级、有状态多智能体系统的图编排框架 (sources: 1)
 - [[System-Auth-Center]] - ERP 系统的集中式身份认证与授权中心服务实体 (sources: 1)
 - [[Andrej-Karpathy]] - 著名 AI 研究者，LLM Wiki 架构发起人 (sources: 1)
+- [[Teamwork]] - Google Antigravity 官方发布的前沿多智能体自适应编排框架 (sources: 1)
 
 ## 📚 概念 (Concepts)
 - [[System-Auth-Center-Architecture]] - system-auth-center 微服务认证中心的安全过滤器链、授权端点与 Token 增强架构 (sources: 1)
@@ -67,6 +68,9 @@
 - [[MCP-Core-Protocol-Elements]] - MCP 核心协议三剑客详解 Resources 只读资源、具有 JSON Schema 的主动可执行 Tools 及其副作用、和 Prompts 模板 (sources: 1)
 - [[MCP-Transport-Modes]] - MCP 物理传输通道详解 MCP 底层三类物理传输机制，横向对比本地 Stdio 管道、已弃用的 Web SSE 双通道、与新一代 Streamable HTTP 全双工流 (sources: 1)
 - [[MCP-FastMCP-LangChain]] - MCP 框架开发与 LangChain 适配，阐述 FastMCP 极简声明开发方式，与 LangChain 生态适配，详述 MultiServerMCPClient 工具适配整合 (sources: 1)
+- [[Agent-Scaling-Law]] - 智能体系统量化扩展律与架构选型预测模型 (sources: 1)
+- [[Long-Proof-Pattern]] - 面向科研级长链推导的竞争性策略搜索与锦标赛证明编排范式 (sources: 1)
+- [[Silent-Execution-Gap]] - 复杂软硬件与智能体时序系统中微架构状态隐性漂移的调试鸿沟 (sources: 1)
 
 ## 📝 摘要 (Summaries)
 - [[Final-OpenID-Connect-Discovery-1.0-incorporating-errata-set-2-summary]] - OpenID Connect Discovery 1.0 发现协议说明 (2026-08-05)
@@ -91,6 +95,8 @@
 - [[LangGraph框架-summary]] - 多智能体工作流框架 LangGraph 核心功能 (2026-07-28)
 - [[system-auth-center-summary]] - Java 微服务认证中心 system-auth-center 架构概览与多登录模式总结 (2026-08-14)
 - [[MCP-模型上下文协议-summary]] - 系统总结由 Anthropic 主导开源的模型上下文协议 (MCP) 核心内容 (2026-07-28)
+- [[Towards-a-Science-of-Scaling-Agent-Systems-summary]] - 智能体系统扩展科学、五大典型架构与实证扩展律研究 (2026-09-18)
+- [[Teamwork-When-AI-Becomes-a-Research-Partner-summary]] - Google Antigravity Teamwork 多智能体前沿编排框架与科研工程突破 (2026-09-18)
 
 ## 📊 对比分析 (Comparisons)
 - [[RAG-vs-Fine-Tuning]] - RAG 与大模型微调在知识时效、幻觉抑制等维度的深度选型指南 (2026-07-28)

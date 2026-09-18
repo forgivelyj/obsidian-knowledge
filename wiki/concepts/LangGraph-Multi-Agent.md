@@ -72,9 +72,14 @@ workflow = create_supervisor(
 ).compile()
 ```
 
+> [!TIP] 集中校验在扩展律中的价值
+> 根据 **[[Agent-Scaling-Law]]** 的实证发现，多智能体系统在缺乏集中式验证的纯点对点交接时，极易发生早期假设错误级联扩散。引入 Supervisor 集中主管架构能够作为天然的“错误吸收池”，拦截伪逻辑进入下一轮广播。而在前沿学术科研场景中，这种集中校验模式被进一步演化为 **[[Teamwork]]** 的 [[Long-Proof-Pattern|锦标赛综合树]] 机制。
+
 ---
 **关联页面**
 - [[LangGraph]] (框架实体)
 - [[LangGraph-State-Graph]] (有状态流程图与 [[LangGraph-State-Graph|Send]] 并发)
 - [[AI-Agent]] (MAS 系统下四大模式的宏观对比)
 - [[DeepAgents-Subagent]] (上层套件的子代理实现)
+- [[Agent-Scaling-Law]] (多智能体系统扩展律与拓扑选型法则)
+- [[Teamwork]] (前沿科研多智能体编排框架)
