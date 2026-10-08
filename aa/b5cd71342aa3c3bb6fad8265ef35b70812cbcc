@@ -1,0 +1,62 @@
+wiki/index.md
+  s_c4547e8cbc1e35::t_3c5ec5994c3ee6 3,24-26,40,42-43,48,75-79,90,104-105,113
+raw/00-Inbox/Teamwork-When-AI-Becomes-a-Research-Partner.md
+  s_c4547e8cbc1e35::t_3c5ec5994c3ee6 1-76
+raw/80-Templates/concept_template.md
+  s_c4547e8cbc1e35::t_3c5ec5994c3ee6 1-26
+wiki/concepts/Long-Proof-Pattern.md
+  s_c4547e8cbc1e35::t_3c5ec5994c3ee6 1-77
+wiki/concepts/LangGraph-Multi-Agent.md
+  s_c4547e8cbc1e35::t_3c5ec5994c3ee6 75-77,84-85
+wiki/entities/Teamwork.md
+  s_c4547e8cbc1e35::t_3c5ec5994c3ee6 1-56
+wiki/concepts/Agent-Scaling-Law.md
+  s_c4547e8cbc1e35::t_3c5ec5994c3ee6 1-76
+wiki/summaries/Towards-a-Science-of-Scaling-Agent-Systems-summary.md
+  s_c4547e8cbc1e35::t_3c5ec5994c3ee6 1-88
+wiki/concepts/Compounding-Knowledge.md
+  s_c4547e8cbc1e35::t_3c5ec5994c3ee6 1-25
+wiki/summaries/Andrej-Karpathy-LLM-Wiki-Pattern-summary.md
+  s_c4547e8cbc1e35::t_3c5ec5994c3ee6 1-27
+wiki/summaries/Teamwork-When-AI-Becomes-a-Research-Partner-summary.md
+  s_c4547e8cbc1e35::t_3c5ec5994c3ee6 1-94
+wiki/concepts/Silent-Execution-Gap.md
+  s_c4547e8cbc1e35::t_3c5ec5994c3ee6 1-60
+wiki/concepts/LLM-Wiki.md
+  s_c4547e8cbc1e35::t_3c5ec5994c3ee6 1-32
+wiki/entities/Andrej-Karpathy.md
+  s_c4547e8cbc1e35::t_3c5ec5994c3ee6 1-25
+"raw/00-Inbox/Andrej Karpathy - LLM Wiki Pattern.md"
+  s_c4547e8cbc1e35::t_3c5ec5994c3ee6 1-26
+wiki/log.md
+  s_c4547e8cbc1e35::t_3c5ec5994c3ee6 241,256-263,265,267,291-308
+raw/80-Templates/entity_template.md
+  s_c4547e8cbc1e35::t_3c5ec5994c3ee6 1-28
+raw/80-Templates/summary_template.md
+  s_c4547e8cbc1e35::t_3c5ec5994c3ee6 1-25
+.obsidian/graph.json
+  s_c4547e8cbc1e35::t_3c5ec5994c3ee6 20-21
+raw/00-Inbox/Towards-a-Science-of-Scaling-Agent-Systems.md
+  s_c4547e8cbc1e35::t_3c5ec5994c3ee6 1-85
+wiki/concepts/AI-Agent.md
+  s_c4547e8cbc1e35::t_3c5ec5994c3ee6 64-66,72-73
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.2",
+  "base_commit_sha": "aab5cd71342aa3c3bb6fad8265ef35b70812cbcc",
+  "prompts": {},
+  "sessions": {
+    "s_c4547e8cbc1e35": {
+      "agent_id": {
+        "tool": "mock_ai",
+        "id": "ai-thread-1791425343623305600",
+        "model": "unknown"
+      },
+      "human_author": "liuyijie <liuyijie@eccom.com.cn>",
+      "custom_attributes": {
+        "model": "Gemini 3.6 Flash"
+      }
+    }
+  }
+}
