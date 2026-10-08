@@ -238,6 +238,7 @@
   - [[Authorization-Server-Metadata]] (概念页)
   - [[Protected-Resource-Metadata]] (概念页)
 - **更新**：`wiki/index.md` (全局索引)
+
 ## [2026-08-10] synthesis | Agent MCP 鉴权标准架构 (DCR与CIMD混合鉴权方案)
 - **新建**：[[Agent MCP 鉴权标准架构 (DCR与CIMD混合鉴权方案)]] (综合洞察页)
 - **更新**：`wiki/index.md` (全局索引)
@@ -252,11 +253,18 @@
 - **更新**：`wiki/index.md` (全局索引)
 - **操作描述**：基于 LangChain OpenWiki 规范与 OKF v0.1 标准，为 `system-auth-center` 代码库建立 `openwiki/` 目录结构（包含 `index.md`, `architecture.md`, `custom-token-granters.md`, `security-and-rate-limiting.md`, `INSTRUCTIONS.md`, `logs.md`），并同步沉淀关联节点至本地 Obsidian 知识库。
 
+## [2026-08-15] ingest | Andrej Karpathy - LLM Wiki Pattern
+- **来源**：`raw/00-Inbox/Andrej Karpathy - LLM Wiki Pattern.md`
+- **新建**：[[Andrej-Karpathy-LLM-Wiki-Pattern-summary]] (摘要页)
+- **新建**：[[Andrej-Karpathy]] (实体页)
+- **新建**：[[LLM-Wiki]] (概念页)
+- **新建**：[[Compounding-Knowledge]] (概念页)
+- **更新**：`wiki/index.md` (全局索引)
+- **操作描述**：摄入 Andrej Karpathy 关于大模型驱动的持久化个人知识库设计模式（LLM Wiki），建立三层架构与四大工作流模型。
 
+- 2026-09-01 19:23:26 [Publish]: 虚拟 MCP 聚合指南 [[output/reports/agentgateway-virtual-mcp-guide.md]]
 
-- 2026-09-01 19:23:26 [Publish]: ɽ [[output/reports/agentgateway-virtual-mcp-guide.md]]
-
-- 2026-09-02 13:58:17 [Publish]: ȫܹʵʩָϽ [[output/reports/agentgateway-comprehensive-architecture-guide.md]]
+- 2026-09-02 13:58:17 [Publish]: 全景架构实施指南 [[output/reports/agentgateway-comprehensive-architecture-guide.md]]
 
 ## [2026-09-04] concept | WikiSkill-Procedural-Memory
 - **新建**：[[WikiSkill-Procedural-Memory]] (概念页)
@@ -280,3 +288,21 @@
 - **来源**：`d:/workspace/java-project/dmp/hr-profile-lakehouse`
 - **新建实体**：[[sonarqube-clean-code-guidelines]]
 - **摘要**：针对使用 SonarQube 与 sonar-mcp-server 进行代码质量检测与门禁治理过程中的分支感知陷阱（遗漏 branch 导致默认检索 master）、S1948 序列化、S3776 认知复杂度、S6813/S3305 依赖注入、S1192 字符串字面量去重、S5786 测试类可见性等反模式与标准解决规范进行外环复盘与沉淀。
+
+## [2026-09-18] ingest | Towards a Science of Scaling Agent Systems (arXiv:2512.08296)
+- **来源**：`raw/00-Inbox/Towards-a-Science-of-Scaling-Agent-Systems.md`
+- **新建**：[[Towards-a-Science-of-Scaling-Agent-Systems-summary]] (摘要页)
+- **新建**：[[Agent-Scaling-Law]] (概念页)
+- **更新**：[[AI-Agent]] (概念页，引入多智能体能力饱和与工具开销边界)
+- **更新**：[[LangGraph-Multi-Agent]] (概念页，引入集中校验防错误雪崩规律)
+- **更新**：`wiki/index.md` (全局索引)
+- **操作描述**：深度解析并摄入华盛顿大学与MIT等团队关于智能体系统扩展律的实证科学研究，量化 5 类架构、能力饱和效应、重工具协调开销负惩罚（$\hat{\beta}=-0.096$）及集中校验对阻断幻觉级联的核心机制，建立架构与任务解耦特征对齐规则。
+
+## [2026-09-18] ingest | Google Antigravity Teamwork (When AI Becomes a Research Partner)
+- **来源**：`raw/00-Inbox/Teamwork-When-AI-Becomes-a-Research-Partner.md`
+- **新建**：[[Teamwork-When-AI-Becomes-a-Research-Partner-summary]] (摘要页)
+- **新建**：[[Teamwork]] (实体页)
+- **新建**：[[Long-Proof-Pattern]] (概念页)
+- **新建**：[[Silent-Execution-Gap]] (概念页)
+- **更新**：`wiki/index.md` (全局索引)
+- **操作描述**：摄入 Google Antigravity 官方发布的 Teamwork 多智能体前沿科研与工程编排体系，解构 Pattern 声明式解耦与运行时弹性伸缩特性，萃取 Long Proof 锦标赛综合树与 1v1 Falsifier 对抗证伪范式，沉淀解决 CPU 微架构时序仿真的 Lockstep 锁步协同方案（跨越静默执行鸿沟），并记录数学 7 大未决猜想及 Eigen/ParlayHash 开源合入战果。

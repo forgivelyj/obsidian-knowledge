@@ -1,6 +1,6 @@
 # Wiki Index
 
-> 最后更新：2026-09-04 | 页面总数：77 | 素材总数：19
+> 最后更新：2026-09-30 | 知识页面总数：87 (实体: 19 | 概念: 41 | 摘要: 24 | 对比: 1 | 综合洞察: 2) | 素材总数：22
 
 ---
 
@@ -21,13 +21,15 @@
 - [[OpenSandbox]] - 阿里开源的专为 AI 自动代码执行设计的隔离容器沙箱系统 (sources: 1)
 - [[LangGraph]] - 由 LangChain 团队开源的用于构建生产级、有状态多智能体系统的图编排框架 (sources: 1)
 - [[System-Auth-Center]] - ERP 系统的集中式身份认证与授权中心服务实体 (sources: 1)
+- [[Andrej-Karpathy]] - 著名 AI 研究者，LLM Wiki 架构发起人 (sources: 1)
+- [[Teamwork]] - Google Antigravity 官方发布的前沿多智能体自适应编排框架 (sources: 1)
+- [[sonarqube-clean-code-guidelines]] - SonarQube Clean Code 质量门禁与代码规范治理准则 (sources: 1)
 
 ## 📚 概念 (Concepts)
 - [[MinIO-SimpleXML-StorageClass-Trap]] - MinIO Java SDK 8.5.x 在 listMultipartUploads 中因 SimpleXML 强行校验 @Element(name="StorageClass") 导致空标签抛出 ValueRequiredException 的缺陷与 OkHttp 拦截器热修复方案 (sources: 1)
 - [[Agentgateway-ExtProc-Dynamic-Schema]] - 基于 Envoy ExtProc 与 K8s 原生服务发现的双向拦截增强机制，实现用户身份动态解密注入、Session 跨会话精准限流、get_tool 自适应 Prompt 聚合与旧服务实时清理 (sources: 1)
 - [[System-Auth-Center-Architecture]] - system-auth-center 微服务认证中心的安全过滤器链、授权端点与 Token 增强架构 (sources: 1)
 - [[Custom-Token-Granter-Pattern]] - 基于 AbstractCustomTokenGranter 扩展的多模式登录（LDAP、SMS、Social）模式 (sources: 1)
-
 - [[OIDC-Discovery]] - WebFinger 与 openid-configuration 配置发现协议 (sources: 1)
 - [[OAuth-Client-ID-Metadata]] - 基于 HTTPS URL 作为 Client ID 的去中心化客户端元数据托管规范 (sources: 1)
 - [[Dynamic-Client-Registration]] - RFC 7591 OAuth 2.0 客户端动态注册与凭证管理协议 (sources: 1)
@@ -35,13 +37,15 @@
 - [[OAuth-Native-Apps]] - RFC 8252 / BCP 212 原生应用安全规范，强制外部浏览器与 PKCE (sources: 1)
 - [[Authorization-Server-Metadata]] - RFC 8414 OAuth 2.0 授权服务器元数据与终节点自动发现协议 (sources: 1)
 - [[Protected-Resource-Metadata]] - RFC 9728 受保护资源服务器元数据与信任 AS 列表发现规范 (sources: 1)
-- [[Resource-Indicators]] - 锁定令牌使用范围 of OAuth2 安全参数 (sources: 1)
+- [[Resource-Indicators]] - 锁定令牌使用范围的 OAuth2 安全参数 (sources: 1)
 - [[Audience-Restriction]] - 限制令牌使用受众的安全机制 (sources: 1)
+- [[LLM-Wiki]] - 由 LLM 自动化维护的个人 Markdown 双链知识库体系 (sources: 1)
+- [[Compounding-Knowledge]] - 知识库随输入与交互产生持续增值复利的机制 (sources: 1)
 - [[RAG]] - 检索增强生成，消除大模型幻觉与时效限制的核心框架 (sources: 8)
 - [[Naive-RAG]] - 经典的索引、检索、生成串行工作流 (sources: 4)
 - [[Embedding]] - 单词/文本的高维连续向量表征与语义距离度量 (sources: 4)
 - [[Vector-Database]] - 专门存储与 ANN 检索高维空间向量的系统 (sources: 5)
-- [[Storage-Context]] - LlamaIndex 的三位一体数据存储中枢 system (sources: 2)
+- [[Storage-Context]] - LlamaIndex 的三位一体数据存储中枢系统 (sources: 2)
 - [[Query-Engine]] - LlamaIndex 的交互问答与多轮聊天引擎 (sources: 1)
 - [[Advanced-RAG]] - 查询改写/混合检索/重排精筛的高级增强范式 (sources: 4)
 - [[Reranking]] - 基于交叉编码器深度算力的高精度文本重排技术 (sources: 5)
@@ -68,6 +72,11 @@
 - [[MCP-Transport-Modes]] - MCP 物理传输通道详解 MCP 底层三类物理传输机制，横向对比本地 Stdio 管道、已弃用的 Web SSE 双通道、与新一代 Streamable HTTP 全双工流 (sources: 1)
 - [[MCP-FastMCP-LangChain]] - MCP 框架开发与 LangChain 适配，阐述 FastMCP 极简声明开发方式，与 LangChain 生态适配，详述 MultiServerMCPClient 工具适配整合 (sources: 1)
 - [[WikiSkill-Procedural-Memory]] - 基于 WikiSkill 的三层架构智能体程序性记忆演进规范，打通代码执行轨迹、测试验证门控与持久化维基 (sources: 1)
+- [[mcp-extproc-tool-search-engine]] - 企业级 MCP ExtProc 网关工具检索、动态能力池映射与意图加权多级检索架构 (sources: 1)
+- [[Agent-Scaling-Law]] - 智能体系统量化扩展律与架构选型预测模型 (sources: 1)
+- [[Long-Proof-Pattern]] - 面向科研级长链推导的竞争性策略搜索与锦标赛证明编排范式 (sources: 1)
+- [[Silent-Execution-Gap]] - 复杂软硬件与智能体时序系统中微架构状态隐性漂移的调试鸿沟 (sources: 1)
+- [[Legacy-VBScript-ADO-Field-Trap]] - Classic ASP/VBScript ADO 对象引用游标脱钩陷阱与解决方案 (sources: 1)
 
 ## 📝 摘要 (Summaries)
 - [[Final-OpenID-Connect-Discovery-1.0-incorporating-errata-set-2-summary]] - OpenID Connect Discovery 1.0 发现协议说明 (2026-08-05)
@@ -78,6 +87,7 @@
 - [[RFC-8414-OAuth-2.0-Authorization-Server-Metadata-summary]] - RFC 8414 授权服务器元数据发现协议说明 (2026-08-05)
 - [[RFC-9728-OAuth-2.0-Protected-Resource-Metadata-summary]] - RFC 9728 受保护资源元数据发现协议说明 (2026-08-05)
 - [[RFC-8707-Resource-Indicators-for-OAuth-2.0-summary]] - RFC 8707 资源指示器规范说明 (2026-07-27)
+- [[Andrej-Karpathy-LLM-Wiki-Pattern-summary]] - Andrej Karpathy LLM Wiki 知识库设计模式 (2026-08-15)
 - [[01-RAG基础-summary]] - 检索增强生成基础、Naive RAG 及向量检索的实操说明 (2026-07-28)
 - [[02-llama_index框架-summary]] - LlamaIndex 架构、LlamaParse、存储体系与引擎开发的系统指南 (2026-07-28)
 - [[03-RAG进阶-summary]] - RAG故障痛点解析、前沿学术变体与重排机制优化 (2026-07-28)
@@ -91,7 +101,8 @@
 - [[LangGraph框架-summary]] - 多智能体工作流框架 LangGraph 核心功能 (2026-07-28)
 - [[system-auth-center-summary]] - Java 微服务认证中心 system-auth-center 架构概览与多登录模式总结 (2026-08-14)
 - [[MCP-模型上下文协议-summary]] - 系统总结由 Anthropic 主导开源的模型上下文协议 (MCP) 核心内容 (2026-07-28)
-
+- [[Towards-a-Science-of-Scaling-Agent-Systems-summary]] - 智能体系统扩展科学、五大典型架构与实证扩展律研究 (2026-09-18)
+- [[Teamwork-When-AI-Becomes-a-Research-Partner-summary]] - Google Antigravity Teamwork 多智能体前沿编排框架与科研工程突破 (2026-09-18)
 
 ## 📊 对比分析 (Comparisons)
 - [[RAG-vs-Fine-Tuning]] - RAG 与大模型微调在知识时效、幻觉抑制等维度的深度选型指南 (2026-07-28)
@@ -99,4 +110,4 @@
 ## 💡 综合洞察 (Synthesis)
 - [[lobehub-mcp-auth-solution]] - LobeHub 接入身份认证 MCP 服务器架构方案 (2026-07-29)
 - [[Agent MCP 鉴权标准架构 (DCR与CIMD混合鉴权方案)]] - Agent MCP 体系中基于 DCR、CIMD、RFC 9728 与 2-Step RFC 8693 Token Exchange 的企业级混合鉴权标准规范 (2026-08-10)
-- [[Legacy-VBScript-ADO-Field-Trap]]: Classic ASP/VBScript ADO 对象引用游标脱钩陷阱与解决方案
+- [[enterprise-mcp-k8s-management-solution]] - 企业级 AgentGateway 与 MCP 在 K8s 环境下的集中治理方案 (2026-09-04)
