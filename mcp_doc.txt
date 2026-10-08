@@ -1,0 +1,121 @@
+
+/
+Docs/
+Agentgateway on Kubernetes/
+Version 1.4.x/
+Get startedFor the complete documentation index, see llms.txt.
+Markdown versions of all docs pages are available by appending .md to any docs URL.MCP servers
+
+Copy as Markdown
+
+
+
+
+Copy as Markdown
+
+View as Markdown
+
+Copy Codeblocks
+
+Connect to Docs MCP
+
+Open in Claude
+
+Open in ChatGPT
+
+Open in Perplexity
+
+PrintPage as Markdown
+
+Copy
+
+
+
+Download
+
+✕Connect to an MCP server and try tools with agentgateway on Kubernetes.
+Verified
+Code examples on this page have been automatically tested and verified.Route to a Model Context Protocol (MCP) server through a static address. For more information, see the About MCP topic.Before you begin Install and set up an agentgateway proxy.Static MCP server Step 1: Deploy an MCP server Deploy a Model Context Protocol (MCP) server that you want agentgateway to proxy traffic to. The following example sets up a simple MCP server with one tool, fetch, that retrieves the content of a website URL that you pass in.Notice the following details about the Service:appProtocol: agentgateway.dev/mcp (required): Configure your service to use the MCP protocol. This way, the agentgateway proxy uses the MCP protocol when connecting to the service.agentgateway.dev/mcp-path annotation (optional): The default values are /sse for the SSE protocol or /mcp for the Streamable HTTP protocol. If you need to change the path of the MCP target endpoint, set this annotation on the Service.kubectl apply -f- <<EOF
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mcp-website-fetcher
+spec:
+  selector:
+    matchLabels:
+      app: mcp-website-fetcher
+  template:
+    metadata:
+      labels:
+        app: mcp-website-fetcher
+    spec:
+      containers:
+      - name: mcp-website-fetcher
+        image: ghcr.io/peterj/mcp-website-fetcher:main
+        imagePullPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mcp-website-fetcher
+  labels:
+    app: mcp-website-fetcher
+spec:
+  selector:
+    app: mcp-website-fetcher
+  ports:
+  - port: 80
+    targetPort: 8000
+    appProtocol: agentgateway.dev/mcp
+EOFStep 2: Create the backend for the MCP server Create a AgentgatewayBackend that sets up the agentgateway target details for the MCP server.Static hostServicekubectl apply -f- <<EOF
+apiVersion: agentgateway.dev/v1alpha1
+kind: AgentgatewayBackend
+metadata:
+  name: mcp-backend
+spec:
+  mcp:
+    targets:
+    - name: mcp-target
+      static:
+        host: mcp-website-fetcher.default.svc.cluster.local
+        port: 80
+        protocol: SSE   
+EOFInstead of specifying the full hostname with static.host, you can use backendRef to reference a Service by name. The backendRef approach is simpler and avoids hardcoding the full cluster DNS name.apiVersion: agentgateway.dev/v1alpha1
+kind: AgentgatewayBackend
+metadata:
+  name: mcp-backend
+spec:
+  mcp:
+    targets:
+    - name: mcp-target
+      static:
+        backendRef:
+          name: mcp-website-fetcher
+        port: 80
+        protocol: SSEStep 3: Route to the backend Create an HTTPRoute resource that routes to the AgentgatewayBackend that you created in the previous step. Use a path match so that requests to /mcp go to the MCP backend and are not routed to an LLM or other backend.kubectl apply -f- <<EOF
+apiVersion: gateway.networking.k8s.io/v1
+kind: HTTPRoute
+metadata:
+  name: mcp
+spec:
+  parentRefs:
+    - name: agentgateway-proxy
+      namespace: agentgateway-system
+  rules:
+    - matches:
+      - path:
+          type: PathPrefix
+          value: /mcp
+      backendRefs:
+      - name: mcp-backend
+        group: agentgateway.dev
+        kind: AgentgatewayBackend  
+EOFStep 4: Verify the connection Use the MCP Inspector tool to verify that you can connect to your sample MCP server through agentgateway.Get the agentgateway address.Cloud Provider LoadBalancer:export INGRESS_GW_ADDRESS=$(kubectl get gateway agentgateway-proxy -n agentgateway-system -o=jsonpath="{.status.addresses[0].value}")
+echo $INGRESS_GW_ADDRESSPort-forward for local testing:kubectl port-forward deployment/agentgateway-proxy -n agentgateway-system 8080:80From the terminal, run the MCP Inspector command. Then, the MCP Inspector opens in your browser. If the MCP inspector tool does not open automatically, run mcp-inspector.npx @modelcontextprotocol/[email protected]From the MCP Inspector menu, connect to your agentgateway address as follows:Transport Type: Select Streamable HTTP.URL: Enter the agentgateway address, port, and the /mcp path. If your agentgateway proxy is exposed with a LoadBalancer server, use http://<lb-address>/mcp. In local test setups where you port-forwarded the agentgateway proxy on your local machine, use http://localhost:8080/mcp.Click Connect.From the menu bar, click the Tools tab. Then from the Tools pane, click List Tools and select the fetch tool.From the fetch pane, in the url field, enter a website URL, such as https://lipsum.com/, and click Run Tool.Verify that you get back the fetched URL content.
+Verify in the Admin UI You can also confirm that the proxy received your configuration in the read-only Admin UI. In Kubernetes mode, the UI reflects the configuration that the agentgateway controller pushes to the proxy, so it is a quick way to check that your resources took effect.Forward port 15000 from the agentgateway-proxy deployment to your local machine.kubectl port-forward deployment/agentgateway-proxy -n agentgateway-system 15000While the port-forward is running, open http://localhost:15000/ui/ in your browser.From the Traffic menu, click Routes. Find your route, and click the view (eye) icon in its row to inspect the route and backend details.Connect an IDE After verifying connectivity with MCP Inspector, you can connect AI coding assistants such as Claude Code, Cursor, or VS Code to the MCP server through agentgateway. For configuration instructions, see MCP clients.Cleanup You can remove the resources that you created in this guide.kubectl delete Deployment mcp-website-fetcher
+kubectl delete Service mcp-website-fetcher
+kubectl delete AgentgatewayBackend mcp-backend
+kubectl delete HTTPRoute mcpLLM (OpenAI)Non-agentic HTTPWas this page helpful?
+
+
+

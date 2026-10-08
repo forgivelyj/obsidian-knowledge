@@ -1,0 +1,38 @@
+
+/
+Docs/
+Agentgateway on Kubernetes/
+Version 1.4.x/
+Security/
+JWT authFor the complete documentation index, see llms.txt.
+Markdown versions of all docs pages are available by appending .md to any docs URL.JWT auth for MCP services
+
+Copy as Markdown
+
+
+
+
+Copy as Markdown
+
+View as Markdown
+
+Connect to Docs MCP
+
+Open in Claude
+
+Open in ChatGPT
+
+Open in Perplexity
+
+PrintPage as Markdown
+
+Copy
+
+
+
+Download
+
+✕Redirects to the MCP JWT authorization guide.Redirecting to /docs/kubernetes/latest/mcp/mcp-access/...JWT authWas this page helpful?
+
+
+

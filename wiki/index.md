@@ -1,6 +1,6 @@
 # Wiki Index
 
-> 最后更新：2026-08-05 | 页面总数：76 | 素材总数：19
+> 最后更新：2026-09-04 | 页面总数：77 | 素材总数：19
 
 ---
 
@@ -23,6 +23,8 @@
 - [[System-Auth-Center]] - ERP 系统的集中式身份认证与授权中心服务实体 (sources: 1)
 
 ## 📚 概念 (Concepts)
+- [[MinIO-SimpleXML-StorageClass-Trap]] - MinIO Java SDK 8.5.x 在 listMultipartUploads 中因 SimpleXML 强行校验 @Element(name="StorageClass") 导致空标签抛出 ValueRequiredException 的缺陷与 OkHttp 拦截器热修复方案 (sources: 1)
+- [[Agentgateway-ExtProc-Dynamic-Schema]] - 基于 Envoy ExtProc 与 K8s 原生服务发现的双向拦截增强机制，实现用户身份动态解密注入、Session 跨会话精准限流、get_tool 自适应 Prompt 聚合与旧服务实时清理 (sources: 1)
 - [[System-Auth-Center-Architecture]] - system-auth-center 微服务认证中心的安全过滤器链、授权端点与 Token 增强架构 (sources: 1)
 - [[Custom-Token-Granter-Pattern]] - 基于 AbstractCustomTokenGranter 扩展的多模式登录（LDAP、SMS、Social）模式 (sources: 1)
 
@@ -65,6 +67,7 @@
 - [[MCP-Core-Protocol-Elements]] - MCP 核心协议三剑客详解 Resources 只读资源、具有 JSON Schema 的主动可执行 Tools 及其副作用、和 Prompts 模板 (sources: 1)
 - [[MCP-Transport-Modes]] - MCP 物理传输通道详解 MCP 底层三类物理传输机制，横向对比本地 Stdio 管道、已弃用的 Web SSE 双通道、与新一代 Streamable HTTP 全双工流 (sources: 1)
 - [[MCP-FastMCP-LangChain]] - MCP 框架开发与 LangChain 适配，阐述 FastMCP 极简声明开发方式，与 LangChain 生态适配，详述 MultiServerMCPClient 工具适配整合 (sources: 1)
+- [[WikiSkill-Procedural-Memory]] - 基于 WikiSkill 的三层架构智能体程序性记忆演进规范，打通代码执行轨迹、测试验证门控与持久化维基 (sources: 1)
 
 ## 📝 摘要 (Summaries)
 - [[Final-OpenID-Connect-Discovery-1.0-incorporating-errata-set-2-summary]] - OpenID Connect Discovery 1.0 发现协议说明 (2026-08-05)
@@ -96,3 +99,4 @@
 ## 💡 综合洞察 (Synthesis)
 - [[lobehub-mcp-auth-solution]] - LobeHub 接入身份认证 MCP 服务器架构方案 (2026-07-29)
 - [[Agent MCP 鉴权标准架构 (DCR与CIMD混合鉴权方案)]] - Agent MCP 体系中基于 DCR、CIMD、RFC 9728 与 2-Step RFC 8693 Token Exchange 的企业级混合鉴权标准规范 (2026-08-10)
+- [[Legacy-VBScript-ADO-Field-Trap]]: Classic ASP/VBScript ADO 对象引用游标脱钩陷阱与解决方案
